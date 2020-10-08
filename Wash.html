@@ -24,7 +24,18 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">COVID-19</a>
+      <script>
+        var random = new Array();
+
+random[0] = "Masks.html";
+random[1] = "Distance.html";
+random[2] = "Info.html";
+
+function randomlink() {
+window.location = random[Math.floor(Math.random()*random.length)];
+}
+</script> 
+      <a class="navbar-brand" href="javascript:randomlink()">COVID-19</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,7 +69,9 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-4">
+        <a href="index.html">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="Hands.png" alt="Socially Distance" width="300">
+      </a>
       </div>
 
       <!-- /.col-lg-8 -->
@@ -95,7 +108,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">Is there an Alternative?</h2>
-            <p class="card-text">If you want you can wear gloves instead. But make sure to not touch the gloves to your face.</p>
+            <p class="card-text">If you want, you can wear gloves instead or even hand sanitizer. But make sure not to touch the gloves to your face.</p>
           </div>
         </div>
       </div>

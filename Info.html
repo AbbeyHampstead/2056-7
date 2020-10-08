@@ -24,7 +24,18 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">COVID-19</a>
+      <script>
+        var random = new Array();
+
+random[0] = "Wash.html";
+random[1] = "Masks.html";
+random[2] = "Distance.html";
+
+function randomlink() {
+window.location = random[Math.floor(Math.random()*random.length)];
+}
+</script> 
+      <a class="navbar-brand" href="javascript:randomlink()">COVID-19</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,15 +69,25 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-4">
+        <a href="index.html">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="Info.png" alt="Stay Informed" width="300">
+      </a>
       </div>
 
       <!-- /.col-lg-8 -->
       <div class="col-lg-5">
         <h1 class="font-weight-light-bold">Stay Informed</h1>
-        <p>Since scientists are constantly learning about this virus, new information is always coming out. And it's essential to stay up to date on that new information. It may save your life.</p>
+        <p>Scientists are constantly learning about this virus and new information is always coming out. So, it's crucial to stay up to date on that new information. It may save your life.</p>
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> More Information</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>
+          <a class="dropdown-item" href="https://www.who.int/health-topics/coronavirus#tab=tab_1">WHO</a>
+          <a class="dropdown-item" href="https://www.niaid.nih.gov/">NIAID</a>
+        </div>
       </div>
       <!-- /.col-md-4 -->
+    </div>
     </div>
     <!-- /.row -->
 
@@ -76,10 +97,10 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">CDC</h2>
-            <p class="card-text">The Centers for Disease Control and Prevention (CDC) is a national public health institute in the United States.Its main goal is to protect public health and safety through the control and prevention of disease, injury, and disability in the US and internationally. And it has been essential for informing people about COVID-19.</p>
+            <p class="card-text">The Centers for Disease Control and Prevention (CDC) is a national public health institute in the United States. Their  main goal is to protect public health and safety through the control and prevention of disease, injury, and disability in the US and internationally. And it has been essential for informing people about COVID-19.</p>
           </div>
-          <div class="card-footer">
-            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="btn btn-primary">CDC</a>
+          <div class="card-footer text-center">
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="btn btn-primary">Center for Disease Control</a>
           </div>
         </div>
       </div>
@@ -88,10 +109,10 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">WHO</h2>
-            <p class="card-text">he World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as "the attainment by all peoples of the highest possible level of health." And it has been essential for informing people about COVID-19.</p>
+            <p class="card-text">The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health. The WHO Constitution, which establishes the agency's governing structure and principles, states its main objective as "the attainment by all peoples of the highest possible level of health." And it has been very nessecary for informing people about COVID-19.</p>
           </div>
-          <div class="card-footer">
-            <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" class="btn btn-primary">WHO</a>
+          <div class="card-footer text-center">
+            <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" class="btn btn-primary">World Health Organization</a>
           </div>
         </div>
       </div>
@@ -100,8 +121,10 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">Dr. Fauci</h2>
-            <p class="card-text">Anthony Stephen Fauci  is an American physician and immunologist who has served as the director of the National Institute of Allergy and Infectious Diseases (NIAID) since 1984. And he has appeared on news channel after news channel to get the word out about COVID-19 and how to safe from it. He is the most important person to follow in this developing pandemic.</p>
+            <p class="card-text">Doctor Fauci is an American physician and immunologist who has served as the director of the National Institute of Allergy and Infectious Diseases (NIAID) since 1984. And he has appeared on news channel after news channel to get the word out about COVID-19 and how to safe. He is the most crucial person to follow in this developing pandemic.</p>
           </div>
+          <div class="card-footer text-center">
+            <a href="https://www.niaid.nih.gov/" class="btn btn-primary">National Institute of Allergy and Infectious Diseases</a>
         </div>
       </div>
       <!-- /.col-md-4 -->

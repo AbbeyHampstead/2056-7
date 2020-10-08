@@ -23,8 +23,20 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="https://ncov2019.live/data">COVID-19</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <script>
+        var random = new Array();
+
+random[0] = "Wash.html";
+random[1] = "Masks.html";
+random[2] = "Distance.html";
+random[3] = "Info.html";
+
+function randomlink() {
+window.location = random[Math.floor(Math.random()*random.length)];
+}
+</script> 
+      <a class="navbar-brand" href="javascript:randomlink()">COVID-19</a>  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -61,9 +73,9 @@
     <header class="jumbotron my-4">
 
     <div class="alert alert-success">
-      <strong>Welcome!</strong> Please stay as safe as possible for your situation</div>
+      <strong>Welcome!</strong> Please stay as safe as possible for your situation.</div>
       <h1 class="bold-display-3">Stay Safe</h1>
-      <p class="lead">Here are a few tips about staying safe in this pandemic. More information and links are located on the top right corner.</p>
+      <p class="lead">Here are a few tips about staying safe in this pandemic. More information and links are located on the top right corner, which will direct you to other pages.</p>
       <a href="https://ncov2019.live/data" class="btn btn-primary btn-lg">COVID-19 Statistics</a>
     </header>
 
@@ -72,40 +84,46 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
+          <a href="Wash.html">
           <img class="card-img-top" src="Hands.png" alt="Wash Your Hands">
+        </a>
           <div class="card-body">
             <h4 class="card-title">Wash Your Hands</h4>
             <p class="card-text">Washing your hands with soap can help kill the virus.</p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="Wear.png" alt="Wear a Mask">
+          <a href="Masks.html">
+          <img class="card-img-top" src="Wear.png" alt="Wear a Mask"></a>
           <div class="card-body">
             <h4 class="card-title">Wear a Mask</h4>
-            <p class="card-text">Since this virus is airborne, properly wearing a mask can help stop the virus from getting out into the air.</p>
+            <p class="card-text">This virus is airborne so, properly wearing a mask can help stop the virus from getting out into the air.</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
+          <a href="Distance.html">
           <img class="card-img-top" src="Social.png" alt="Socail Distance">
+        </a>
           <div class="card-body">
             <h4 class="card-title">Stay 6 feet Apart</h4>
-            <p class="card-text">This virus travels through the air so its essential to stay 6 feet apart from others whenever possible.</p>
+            <p class="card-text">This virus travels through the air, so it is essential to stay 6 feet apart from others whenever possible.</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
+          <a href="Info.html">
           <img class="card-img-top" src="Info.png" alt="Stay Informed">
+        </a>
           <div class="card-body">
             <h4 class="card-title">Stay Informed</h4>
-            <p class="card-text">Since scientists are constantly learning about this virus, new information is always coming out. And it's essential to stay up to date on that new information. It may save your life.</p>
+            <p class="card-text">Scientists are constantly learning about this virus and new information is always coming out. So, it's crucial to stay up to date on that new information. It may save your life.</p>
           </div>
         </div>
       </div>

@@ -24,7 +24,18 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">COVID-19</a>
+      <script>
+        var random = new Array();
+
+random[0] = "Wash.html";
+random[1] = "Distance.html";
+random[2] = "Info.html";
+
+function randomlink() {
+window.location = random[Math.floor(Math.random()*random.length)];
+}
+</script> 
+      <a class="navbar-brand" href="javascript:randomlink()">COVID-19</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,13 +69,15 @@
     <!-- Heading Row -->
     <div class="row align-items-center my-5">
       <div class="col-lg-4">
+        <a href="index.html">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="Wear.png" alt="Wear a Mask" width="300">
+      </a>
       </div>
 
       <!-- /.col-lg-8 -->
       <div class="col-lg-5">
         <h1 class="font-weight-light-bold">Wear a Mask</h1>
-        <p>Since this virus is airborne, properly wearing a mask can help stop the virus from getting out into the air.</p>
+        <p>This virus is airborne so, properly wearing a mask can help stop the virus from getting out into the air.</p>
         <a class="btn btn-primary" href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html" class="btn btn-primary">More Information</a>
       </div>
       <!-- /.col-md-4 -->
@@ -77,7 +90,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">Why does Wearing a Mask Work?</h2>
-            <p class="card-text">At the molecular level, soap breaks things apart. So its breaking apart the COVID-19 particles.</p>
+            <p class="card-text">Basically, masks block COVID particles that you have from going to other people. If it is medical-grade it can also block particles from other people getting to you.</p>
           </div>
         </div>
       </div>
@@ -86,7 +99,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">If people stay 6 feet apart, why the mask?</h2>
-            <p class="card-text">Both are nessecary because they both decrease the change of you or those around you getting COVID-19. So double the protection means double the chance you will not get sick.</p>
+            <p class="card-text">Both are necessary because they both decrease the change of you or those around you getting COVID-19. So double the protection means double the chance you will not get sick.</p>
           </div>
         </div>
       </div>
@@ -95,7 +108,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title">What Type of Mask Should I Get?</h2>
-            <p class="card-text">Get a cotton mask so you can wash and reuse it. But if one use masks are the only masks avaible get those. Do not get medical-grade masks because those should saved for doctors, nurses, and other essential workers./p>
+            <p class="card-text">Get a cotton mask so you can wash and reuse it. But if one-use masks are the only masks, available get a few of those. Do not get medical-grade masks because those should be saved for doctors, nurses, and other essential workers.</p>
           </div>
         </div>
       </div>
